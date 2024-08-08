@@ -1,0 +1,44 @@
+{
+	"schemaVersion": 1,
+	"id": "coppergenerators",
+	"version": "${version}",
+	"name": "Copper Generators",
+	"description": "The base level generators for Copper Networks",
+	"authors": [
+		"entity0"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "LGPL-3.0",
+	"icon": "assets/coppergenerators/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"entity0.coppergenerators.CopperGenerators"
+		],
+		"client": [
+			"entity0.coppergenerators.CopperGeneratorsClient"
+		],
+		"fabric-datagen": [
+			"entity0.coppergenerators.CopperGeneratorsDataGenerator"
+		]
+	},
+	"mixins": [
+		"coppergenerators.mixins.json",
+		{
+			"config": "coppergenerators.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.15.11",
+		"minecraft": "~1.21",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
