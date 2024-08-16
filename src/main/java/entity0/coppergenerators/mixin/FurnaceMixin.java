@@ -19,19 +19,15 @@ public class FurnaceMixin implements copperNetworkPowerAPI {
 	public CopperNetworkPowerClass copperNetworkAPI() {
 		return copperPowerInstance;
 	}
-	private static void LOL() {
-		CopperGenerators.LOGGER.info("LOL this works");
-	}
 	@Inject(at = @At("TAIL"), method = "tick")
 	private static void tick(World world, BlockPos pos, BlockState state, AbstractFurnaceBlockEntity blockEntity, CallbackInfo info) {
-		LOL();
-		//blockEntity.CopperNetworkAPI().cleanupNetwork();
+		if (((copperNetworkPowerAPI) blockEntity).copperNetworkAPI().canGenerate(1)) {
+			((copperNetworkPowerAPI) blockEntity).copperNetworkAPI().generate(1);
+		}
+		((copperNetworkPowerAPI) blockEntity).copperNetworkAPI().cleanupNetwork();
+		CopperGenerators.LOGGER.info("Hello");
 
 
 	}
 
 }
-
-		//if (blockEntity.copperNetworkAPI().canGenerate(1)) {
-		//blockEntity.copperNetworkAPI().generate(1);
-		//}
