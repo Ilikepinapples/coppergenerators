@@ -29,7 +29,12 @@
 		"coppergenerators.mixins.json",
 		{
 			"config": "coppergenerators.client.mixins.json",
-			"environment": "client"
+			"environment": "client",
+			"custom": {
+				"loom:injected_interfaces": {
+					"net/minecraft/class_2609": ["net/entity0/coppernetworks/copperNetworkPowerAPI"]
+				}
+			}
 		}
 	],
 	"depends": {
@@ -40,10 +45,5 @@
 		"coppernetworks": "*"
 	},
 	"suggests": {
-	},
-	"custom": {
-		"loom:injected_interfaces": {
-			"net/minecraft/class_2609": ["net/entity0/coppernetworks/copperNetworkPowerAPI"]
-		}
 	}
 }
