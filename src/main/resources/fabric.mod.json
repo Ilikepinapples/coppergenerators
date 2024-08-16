@@ -40,5 +40,10 @@
 		"coppernetworks": "*"
 	},
 	"suggests": {
+	},
+	"custom": {
+		"loom:injected_interfaces": {
+			"net/minecraft/class_2609": ["net/entity0/coppernetworks/copperNetworkPowerAPI"]
+		}
 	}
 }

@@ -1,6 +1,7 @@
 package entity0.coppergenerators;
 
 import entity0.coppergenerators.blocks.modBlocks;
+import entity0.coppergenerators.blocks.entity.modBlockEntity;
 import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;
@@ -21,5 +22,6 @@ public class CopperGenerators implements ModInitializer {
 
 		LOGGER.info("Initialising coppergenerators.");
 		modBlocks.initialize();
+		modBlockEntity.registerBlockEntities();
 	}
 }

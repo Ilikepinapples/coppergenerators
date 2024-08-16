@@ -1,4 +1,4 @@
 package entity0.coppergenerators.blocks.entity;
 
-public class modBlockEntities {
+public class CopperfiedSculkCatalystBlockEntity {
 }
