@@ -37,4 +37,14 @@ public class modBlocks {
             "thermophotovoltaic_generator",
             true
     );
+    public static final Block PASSIVEVOIDGENERATOR = register(
+            new PassiveVoidGenerator(AbstractBlock.Settings.create().sounds(BlockSoundGroup.COPPER)),
+            "passive_void_generator",
+            true
+    );
+    public static final Block COPPERFIEDSCULKCATALYST = register(
+            new CopperfiedSculkCatalyst(AbstractBlock.Settings.create().sounds(BlockSoundGroup.COPPER)),
+            "copperfied_sculk_catalyst",
+            true
+    );
 }

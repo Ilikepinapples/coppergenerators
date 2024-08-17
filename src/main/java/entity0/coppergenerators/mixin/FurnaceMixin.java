@@ -25,8 +25,8 @@ public class FurnaceMixin implements copperNetworkPowerAPI {
 	}
 	@Inject(at = @At(value = "INVOKE", target = "Lnet/minecraft/block/entity/AbstractFurnaceBlockEntity;setLastRecipe(Lnet/minecraft/recipe/RecipeEntry;)V", shift = At.Shift.AFTER), method = "tick")
 	private static void tick2(World world, BlockPos pos, BlockState state, AbstractFurnaceBlockEntity blockEntity, CallbackInfo ci) {
-		if (((copperNetworkPowerAPI) blockEntity).copperNetworkAPI().canGenerate(500)) {
-			((copperNetworkPowerAPI) blockEntity).copperNetworkAPI().generate(500);
+		if (((copperNetworkPowerAPI) blockEntity).copperNetworkAPI().canGenerate(5000)) {
+			((copperNetworkPowerAPI) blockEntity).copperNetworkAPI().generate(5000);
 		} else {
 			((copperNetworkPowerAPI) blockEntity).copperNetworkAPI().setNetworkmaxPower();
 		}
