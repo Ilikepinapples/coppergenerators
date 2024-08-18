@@ -1,0 +1,5 @@
+{
+	"variants": {
+		"": { "model": "coppergenerators:block/passive_void_generator" }
+	}
+}
