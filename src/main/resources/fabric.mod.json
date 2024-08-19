@@ -18,24 +18,12 @@
 		"main": [
 			"entity0.coppergenerators.CopperGenerators"
 		],
-		"client": [
-			"entity0.coppergenerators.CopperGeneratorsClient"
-		],
 		"fabric-datagen": [
 			"entity0.coppergenerators.CopperGeneratorsDataGenerator"
 		]
 	},
 	"mixins": [
-		"coppergenerators.mixins.json",
-		{
-			"config": "coppergenerators.client.mixins.json",
-			"environment": "client",
-			"custom": {
-				"loom:injected_interfaces": {
-					"net/minecraft/class_2609": ["net/entity0/coppernetworks/copperNetworkPowerAPI"]
-				}
-			}
-		}
+		"coppergenerators.mixins.json"
 	],
 	"depends": {
 		"fabricloader": ">=0.15.11",

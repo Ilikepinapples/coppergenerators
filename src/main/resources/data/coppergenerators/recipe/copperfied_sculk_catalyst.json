@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " c ",
+    "cSc",
+    " c "
+  ],
+  "key": {
+    "c": {
+      "item": "minecraft:copper_ingot"
+    },
+    "S": {
+      "item": "minecraft:sculk_catalyst"
+    }
+  },
+  "result": {
+    "id": "coppergenerators:copperfied_sculk_catalyst",
+    "count": 1
+  }
+}
