@@ -25,7 +25,6 @@ public class PassiveVoidGeneratorBlockEntity extends BlockEntity implements copp
     public static void tick(World world, BlockPos pos, BlockState state, PassiveVoidGeneratorBlockEntity blockEntity) {
         if (world.getRegistryKey().getValue().equals(DimensionTypes.THE_END_ID)) {
             if (overVoid(world, pos)) {
-                CopperGenerators.LOGGER.info("over void");
                 if (blockEntity.copperNetworkAPI().canGenerate(1)) {
                     blockEntity.copperNetworkAPI().generate(1);
                 }

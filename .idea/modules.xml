@@ -5,6 +5,9 @@
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/coppergenerators.client.iml" filepath="$PROJECT_DIR$/.idea/modules/coppergenerators.client.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/coppergenerators.main.iml" filepath="$PROJECT_DIR$/.idea/modules/coppergenerators.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/coppergenerators.test.iml" filepath="$PROJECT_DIR$/.idea/modules/coppergenerators.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/entity0.coppergenerators.coppergenerators.client.iml" filepath="$PROJECT_DIR$/.idea/modules/entity0.coppergenerators.coppergenerators.client.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/entity0.coppergenerators.coppergenerators.main.iml" filepath="$PROJECT_DIR$/.idea/modules/entity0.coppergenerators.coppergenerators.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/entity0.coppergenerators.coppergenerators.test.iml" filepath="$PROJECT_DIR$/.idea/modules/entity0.coppergenerators.coppergenerators.test.iml" />
     </modules>
   </component>
 </project>
