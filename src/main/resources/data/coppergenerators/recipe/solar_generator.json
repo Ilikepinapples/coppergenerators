@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "ccc"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:quartz"
+    },
+    "c": {
+      "item": "minecraft:copper_ingot"
+    }
+  },
+  "result": {
+    "id": "coppergenerators:solar_generator",
+    "count": 1
+  }
+}
